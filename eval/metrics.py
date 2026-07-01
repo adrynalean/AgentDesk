@@ -27,6 +27,25 @@ def faithfulness(answer: str, contexts: list[str]) -> float:
     return round(len(ans & ctx) / len(ans), 3)
 
 
+_JUDGE_PROMPT = """You are grading whether an ANSWER is fully supported by the CONTEXT.
+Reply with a single number between 0 and 1 (1 = every claim supported, 0 = unsupported).
+
+CONTEXT:
+{context}
+
+ANSWER:
+{answer}
+
+Score:"""
+
+
+def faithfulness_llm(answer: str, contexts: list[str], llm) -> float:
+    """LLM-as-judge faithfulness (0..1). Use with a real provider for quality scores."""
+    out = llm.generate(_JUDGE_PROMPT.format(context="\n".join(contexts), answer=answer))
+    m = re.search(r"0?\.\d+|[01]", out)
+    return float(m.group(0)) if m else 0.0
+
+
 def aggregate(scores: list[float]) -> dict[str, float]:
     if not scores:
         return {"n": 0, "mean": 0.0}

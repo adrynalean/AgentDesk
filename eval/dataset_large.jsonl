@@ -1,0 +1,250 @@
+{"question": "What does inspect.walktree do?", "answer": "Recursive helper function for getclasstree().", "source": "inspect.md"}
+{"question": "What does urllib.parse.unquote_plus do?", "answer": "Like unquote(), but also replace plus signs by spaces, as required for unquoting HTML form values.", "source": "urllib_parse.md"}
+{"question": "What does email.utils.encode_rfc2231 do?", "answer": "Encode string according to RFC 2231.", "source": "email_utils.md"}
+{"question": "What does ast.BoolOp do?", "answer": "BoolOp(boolop op, expr* values)", "source": "ast.md"}
+{"question": "What does base64.b64encode do?", "answer": "Encode the bytes-like object s using Base64 and return a bytes object.", "source": "base64.md"}
+{"question": "What does sqlite3.NotSupportedError do?", "answer": "Common base class for all non-exit exceptions.", "source": "sqlite3.md"}
+{"question": "What does inspect.isabstract do?", "answer": "Return true if the object is an abstract base class (ABC).", "source": "inspect.md"}
+{"question": "What does collections.defaultdict do?", "answer": "defaultdict(default_factory=None, /, [...]) --> dict with default factory  The default factory is called without arguments to produce a new value when a key is not present, in __getitem__ only.", "source": "collections.md"}
+{"question": "What does socket.create_connection do?", "answer": "Connect to *address* and return the socket object.", "source": "socket.md"}
+{"question": "What does ast.List do?", "answer": "List(expr* elts, expr_context ctx)", "source": "ast.md"}
+{"question": "What does decimal.DivisionByZero do?", "answer": "Second argument to a division or modulo operation was zero.", "source": "decimal.md"}
+{"question": "What does ipaddress.IPv4Interface do?", "answer": "Represent and manipulate single IPv4 Addresses.", "source": "ipaddress.md"}
+{"question": "What does inspect.BlockFinder do?", "answer": "Provide a tokeneater() method to detect the end of a code block.", "source": "inspect.md"}
+{"question": "What does contextlib.AsyncContextDecorator do?", "answer": "A base class or mixin that enables async context managers to work as decorators.", "source": "contextlib.md"}
+{"question": "What does tokenize.TokenInfo do?", "answer": "TokenInfo(type, string, start, end, line)", "source": "tokenize.md"}
+{"question": "What does re.split do?", "answer": "Split the source string by the occurrences of the pattern, returning a list containing the resulting substrings.", "source": "re.md"}
+{"question": "What does statistics.pvariance do?", "answer": "Return the population variance of ``data``.", "source": "statistics.md"}
+{"question": "What does decimal.Context do?", "answer": "The context affects almost all operations and controls rounding, Over/Underflow, raising of exceptions and much more.", "source": "decimal.md"}
+{"question": "What does typing.TypeVar do?", "answer": "Type variable.", "source": "typing.md"}
+{"question": "What does email.utils.formatdate do?", "answer": "Returns a date string as specified by RFC 2822, e.g.:  Fri, 09 Nov 2001 01:08:47 -0000  Optional timeval if given is a floating-point time value as accepted by gmtime() and localtime(), otherwise the current time is used.", "source": "email_utils.md"}
+{"question": "What does logging.log do?", "answer": "Log 'msg % args' with the integer severity 'level' on the root logger.", "source": "logging.md"}
+{"question": "What does codecs.iterencode do?", "answer": "Encoding iterator.", "source": "codecs.md"}
+{"question": "What does socket.herror do?", "answer": "Base class for I/O related errors.", "source": "socket.md"}
+{"question": "What does statistics.median_low do?", "answer": "Return the low median of numeric data.", "source": "statistics.md"}
+{"question": "What does calendar.format do?", "answer": "Prints multi-column formatting for year calendars", "source": "calendar.md"}
+{"question": "What does re.PatternError do?", "answer": "Exception raised for invalid regular expressions.", "source": "re.md"}
+{"question": "What does abc.abstractmethod do?", "answer": "A decorator indicating abstract methods.", "source": "abc.md"}
+{"question": "What does xml.etree.ElementTree.indent do?", "answer": "Indent an XML document by inserting newlines and indentation space after elements.", "source": "xml_etree_ElementTree.md"}
+{"question": "What does logging.LoggerAdapter do?", "answer": "An adapter for loggers which makes it easier to specify contextual information in logging output.", "source": "logging.md"}
+{"question": "What does inspect.getcomments do?", "answer": "Get lines of comments immediately preceding an object's source code.", "source": "inspect.md"}
+{"question": "What does statistics.median_high do?", "answer": "Return the high median of data.", "source": "statistics.md"}
+{"question": "What does math.modf do?", "answer": "Return the fractional and integer parts of x.", "source": "math.md"}
+{"question": "What does calendar.TextCalendar do?", "answer": "Subclass of Calendar that outputs a calendar as a simple plain text similar to the UNIX program cal.", "source": "calendar.md"}
+{"question": "What does configparser.UnnamedSectionDisabledError do?", "answer": "Raised when an attempt to use UNNAMED_SECTION is made with the feature disabled.", "source": "configparser.md"}
+{"question": "What does typing.SupportsComplex do?", "answer": "An ABC with one abstract method __complex__.", "source": "typing.md"}
+{"question": "What does datetime.timedelta do?", "answer": "Difference between two datetime values.", "source": "datetime.md"}
+{"question": "What does traceback.format_list do?", "answer": "Format a list of tuples or FrameSummary objects for printing.", "source": "traceback.md"}
+{"question": "What does uuid.UUID do?", "answer": "Instances of the UUID class represent UUIDs as specified in RFC 4122.", "source": "uuid.md"}
+{"question": "What does inspect.iscode do?", "answer": "Return true if the object is a code object.", "source": "inspect.md"}
+{"question": "What does os.removedirs do?", "answer": "removedirs(name)  Super-rmdir; remove a leaf directory and all empty intermediate ones.", "source": "os.md"}
+{"question": "What does math.degrees do?", "answer": "Convert angle x from radians to degrees.", "source": "math.md"}
+{"question": "What does pprint.pformat do?", "answer": "Format a Python object into a pretty-printed representation.", "source": "pprint.md"}
+{"question": "What does unicodedata.normalize do?", "answer": "Return the normal form 'form' for the Unicode string unistr.", "source": "unicodedata.md"}
+{"question": "What does time.get_clock_info do?", "answer": "get_clock_info(name: str) -> dict  Get information of the specified clock.", "source": "time.md"}
+{"question": "What does subprocess.check_output do?", "answer": "Run command with arguments and return its output.", "source": "subprocess.md"}
+{"question": "What does dis.get_instructions do?", "answer": "Iterator for the opcodes in methods, functions or code  Generates a series of Instruction named tuples giving the details of each operations in the supplied code.", "source": "dis.md"}
+{"question": "What does argparse.Action do?", "answer": "Information about how to convert command line strings to Python objects.", "source": "argparse.md"}
+{"question": "What does re.fullmatch do?", "answer": "Try to apply the pattern to all of the string, returning a Match object, or None if no match was found.", "source": "re.md"}
+{"question": "What does os.fsdecode do?", "answer": "Decode filename (an os.PathLike, bytes, or str) from the filesystem encoding with 'surrogateescape' error handler, return str unchanged.", "source": "os.md"}
+{"question": "What does ast.ParamSpec do?", "answer": "ParamSpec(identifier name, expr?", "source": "ast.md"}
+{"question": "What does decimal.Inexact do?", "answer": "Base class for arithmetic errors.", "source": "decimal.md"}
+{"question": "What does math.fabs do?", "answer": "Return the absolute value of the float x.", "source": "math.md"}
+{"question": "What does smtplib.SMTPDataError do?", "answer": "The SMTP server didn't accept the data.", "source": "smtplib.md"}
+{"question": "What does calendar.HTMLCalendar do?", "answer": "This calendar returns complete HTML pages.", "source": "calendar.md"}
+{"question": "What does ast.MatchAs do?", "answer": "MatchAs(pattern?", "source": "ast.md"}
+{"question": "What does shutil.unregister_unpack_format do?", "answer": "Removes the pack format from the registry.", "source": "shutil.md"}
+{"question": "What does ast.AsyncFor do?", "answer": "AsyncFor(expr target, expr iter, stmt* body, stmt* orelse, string?", "source": "ast.md"}
+{"question": "What does array.array do?", "answer": "array(typecode [, initializer]) -> array  Return a new array whose items are restricted by typecode, and initialized from the optional initializer value, which must be a list, string or iterable over elements of the appropriate type.", "source": "array.md"}
+{"question": "What does difflib.context_diff do?", "answer": "Compare two sequences of lines; generate the delta as a context diff.", "source": "difflib.md"}
+{"question": "What does inspect.Parameter do?", "answer": "Represents a parameter in a function signature.", "source": "inspect.md"}
+{"question": "What does dis.show_code do?", "answer": "Print details of methods, functions, or code to *file*.", "source": "dis.md"}
+{"question": "What does base64.z85decode do?", "answer": "Decode the z85-encoded bytes-like object or ASCII string b  The result is returned as a bytes object.", "source": "base64.md"}
+{"question": "What does contextlib.ContextDecorator do?", "answer": "A base class or mixin that enables context managers to work as decorators.", "source": "contextlib.md"}
+{"question": "What does zipfile.error do?", "answer": "Common base class for all non-exit exceptions.", "source": "zipfile.md"}
+{"question": "What does math.acosh do?", "answer": "Return the inverse hyperbolic cosine of x.", "source": "math.md"}
+{"question": "What does inspect.getsourcefile do?", "answer": "Return the filename that can be used to locate an object's source.", "source": "inspect.md"}
+{"question": "What does os.PathLike do?", "answer": "Abstract base class for implementing the file system path protocol.", "source": "os.md"}
+{"question": "What does socket.fromshare do?", "answer": "fromshare(info) -> socket object  Create a socket object from the bytes object returned by socket.share(pid).", "source": "socket.md"}
+{"question": "What does math.perm do?", "answer": "Number of ways to choose k items from n items without repetition and with order.", "source": "math.md"}
+{"question": "What does locale.atoi do?", "answer": "Converts a string to an integer according to the locale settings.", "source": "locale.md"}
+{"question": "What does math.isclose do?", "answer": "Determine whether two floating-point numbers are close in value.", "source": "math.md"}
+{"question": "What does ssl.SSLSocket do?", "answer": "This class implements a subtype of socket.socket that wraps the underlying OS socket in an SSL context when necessary, and provides read and write methods over that channel.", "source": "ssl.md"}
+{"question": "What does datetime.date do?", "answer": "date(year, month, day) --> date object", "source": "datetime.md"}
+{"question": "What does ast.TemplateStr do?", "answer": "TemplateStr(expr* values)", "source": "ast.md"}
+{"question": "What does math.fsum do?", "answer": "Return an accurate floating-point sum of values in the iterable seq.", "source": "math.md"}
+{"question": "What does xml.etree.ElementTree.canonicalize do?", "answer": "Convert XML to its C14N 2.0 serialised form.", "source": "xml_etree_ElementTree.md"}
+{"question": "What does http.client.BadStatusLine do?", "answer": "Common base class for all non-exit exceptions.", "source": "http_client.md"}
+{"question": "What does urllib.parse.urljoin do?", "answer": "Join a base URL and a possibly relative URL to form an absolute interpretation of the latter.", "source": "urllib_parse.md"}
+{"question": "What does shutil.copy2 do?", "answer": "Copy data and metadata.", "source": "shutil.md"}
+{"question": "What does ast.increment_lineno do?", "answer": "Increment the line number and end line number of each node in the tree starting at *node* by *n*.", "source": "ast.md"}
+{"question": "What does ast.DictComp do?", "answer": "DictComp(expr key, expr value, comprehension* generators)", "source": "ast.md"}
+{"question": "What does abc.abstractclassmethod do?", "answer": "A decorator indicating abstract classmethods.", "source": "abc.md"}
+{"question": "What does fnmatch.fnmatch do?", "answer": "Test whether FILENAME matches PATTERN.", "source": "fnmatch.md"}
+{"question": "What does os.terminal_size do?", "answer": "A tuple of (columns, lines) for holding terminal window size", "source": "os.md"}
+{"question": "What does logging.FileHandler do?", "answer": "A handler class which writes formatted logging records to disk files.", "source": "logging.md"}
+{"question": "What does threading.activeCount do?", "answer": "Return the number of Thread objects currently alive.", "source": "threading.md"}
+{"question": "What does sqlite3.Error do?", "answer": "Common base class for all non-exit exceptions.", "source": "sqlite3.md"}
+{"question": "What does itertools.takewhile do?", "answer": "Return successive entries from an iterable as long as the predicate evaluates to true for each entry.", "source": "itertools.md"}
+{"question": "What does ast.MatchClass do?", "answer": "MatchClass(expr cls, pattern* patterns, identifier* kwd_attrs, pattern* kwd_patterns)", "source": "ast.md"}
+{"question": "What does os.statvfs_result do?", "answer": "statvfs_result: Result from statvfs or fstatvfs.", "source": "os.md"}
+{"question": "What does fnmatch.translate do?", "answer": "Translate a shell PATTERN to a regular expression.", "source": "fnmatch.md"}
+{"question": "What does ast.iter_child_nodes do?", "answer": "Yield all direct child nodes of *node*, that is, all fields that are nodes and all items of fields that are lists of nodes.", "source": "ast.md"}
+{"question": "What does ast.MatchValue do?", "answer": "MatchValue(expr value)", "source": "ast.md"}
+{"question": "What does ast.Interpolation do?", "answer": "Interpolation(expr value, constant str, int conversion, expr?", "source": "ast.md"}
+{"question": "What does ast.ListComp do?", "answer": "ListComp(expr elt, comprehension* generators)", "source": "ast.md"}
+{"question": "What does difflib.Differ do?", "answer": "Differ is a class for comparing sequences of lines of text, and producing human-readable differences or deltas.", "source": "difflib.md"}
+{"question": "What does base64.b32hexencode do?", "answer": "Encode the bytes-like objects using base32hex and return a bytes object.", "source": "base64.md"}
+{"question": "What does pickle.PickleBuffer do?", "answer": "Wrapper for potentially out-of-band buffers", "source": "pickle.md"}
+{"question": "What does inspect.getinnerframes do?", "answer": "Get a list of records for a traceback's frame and all lower frames.", "source": "inspect.md"}
+{"question": "What does filecmp.cmpfiles do?", "answer": "Compare common files in two directories.", "source": "filecmp.md"}
+{"question": "What does unicodedata.combining do?", "answer": "Returns the canonical combining class assigned to the character chr as integer.", "source": "unicodedata.md"}
+{"question": "What does typing.get_args do?", "answer": "Get type arguments with all substitutions performed.", "source": "typing.md"}
+{"question": "What does abc.abstractproperty do?", "answer": "A decorator indicating abstract properties.", "source": "abc.md"}
+{"question": "What does abc.update_abstractmethods do?", "answer": "Recalculate the set of abstract methods of an abstract class.", "source": "abc.md"}
+{"question": "What does ast.get_source_segment do?", "answer": "Get source code segment of the *source* that generated *node*.", "source": "ast.md"}
+{"question": "What does socket.create_server do?", "answer": "Convenience function which creates a SOCK_STREAM type socket bound to *address* (a 2-tuple (host, port)) and return the socket object.", "source": "socket.md"}
+{"question": "What does copy.deepcopy do?", "answer": "Deep copy operation on arbitrary Python objects.", "source": "copy.md"}
+{"question": "What does argparse.RawDescriptionHelpFormatter do?", "answer": "Help message formatter which retains any formatting in descriptions.", "source": "argparse.md"}
+{"question": "What does operator.methodcaller do?", "answer": "Return a callable object that calls the given method on its operand.", "source": "operator.md"}
+{"question": "What does email.utils.decode_params do?", "answer": "Decode parameters list according to RFC 2231.", "source": "email_utils.md"}
+{"question": "What does typing.overload do?", "answer": "Decorator for overloaded functions/methods.", "source": "typing.md"}
+{"question": "What does threading.settrace_all_threads do?", "answer": "Set a trace function for all threads started from the threading module and all Python threads that are currently executing.", "source": "threading.md"}
+{"question": "What does contextlib.AbstractContextManager do?", "answer": "An abstract base class for context managers.", "source": "contextlib.md"}
+{"question": "What does re.match do?", "answer": "Try to apply the pattern at the start of the string, returning a Match object, or None if no match was found.", "source": "re.md"}
+{"question": "What does zipfile.BadZipFile do?", "answer": "Common base class for all non-exit exceptions.", "source": "zipfile.md"}
+{"question": "What does math.cos do?", "answer": "Return the cosine of x (measured in radians).", "source": "math.md"}
+{"question": "What does smtplib.SMTPException do?", "answer": "Base class for all exceptions raised by this module.", "source": "smtplib.md"}
+{"question": "What does locale.currency do?", "answer": "Formats val according to the currency settings in the current locale.", "source": "locale.md"}
+{"question": "What does traceback.TracebackException do?", "answer": "An exception ready for rendering.", "source": "traceback.md"}
+{"question": "What does logging.PlaceHolder do?", "answer": "PlaceHolder instances are used in the Manager logger hierarchy to take the place of nodes for which no loggers have been defined.", "source": "logging.md"}
+{"question": "What does itertools.cycle do?", "answer": "Return elements from the iterable until it is exhausted.", "source": "itertools.md"}
+{"question": "What does inspect.FrameInfo do?", "answer": "_FrameInfo(frame, filename, lineno, function, code_context, index)", "source": "inspect.md"}
+{"question": "What does xml.etree.ElementTree.fromstring do?", "answer": "Parse XML document from string constant.", "source": "xml_etree_ElementTree.md"}
+{"question": "What does email.utils.localtime do?", "answer": "Return local time as an aware datetime object.", "source": "email_utils.md"}
+{"question": "What does subprocess.check_call do?", "answer": "Run command with arguments.", "source": "subprocess.md"}
+{"question": "What does smtplib.quotedata do?", "answer": "Quote data for email.", "source": "smtplib.md"}
+{"question": "What does pprint.isrecursive do?", "answer": "Determine if object requires a recursive representation.", "source": "pprint.md"}
+{"question": "What does urllib.parse.unwrap do?", "answer": "Transform a string like '<URL:scheme://host/path>' into 'scheme://host/path'.", "source": "urllib_parse.md"}
+{"question": "What does ipaddress.summarize_address_range do?", "answer": "Summarize a network range given the first and last IP addresses.", "source": "ipaddress.md"}
+{"question": "What does typing.final do?", "answer": "Decorator to indicate final methods and final classes.", "source": "typing.md"}
+{"question": "What does shutil.rmtree do?", "answer": "Recursively delete a directory tree.", "source": "shutil.md"}
+{"question": "What does http.client.UnimplementedFileMode do?", "answer": "Common base class for all non-exit exceptions.", "source": "http_client.md"}
+{"question": "What does itertools.zip_longest do?", "answer": "Return a zip_longest object whose .__next__() method returns a tuple where the i-th element comes from the i-th iterable argument.", "source": "itertools.md"}
+{"question": "What does contextlib.ExitStack do?", "answer": "Context manager for dynamic management of a stack of exit callbacks.", "source": "contextlib.md"}
+{"question": "What does ssl.SSLZeroReturnError do?", "answer": "SSL/TLS session closed cleanly.", "source": "ssl.md"}
+{"question": "What does threading.setprofile do?", "answer": "Set a profile function for all threads started from the threading module.", "source": "threading.md"}
+{"question": "What does tarfile.EOFHeaderError do?", "answer": "Exception for end of file headers.", "source": "tarfile.md"}
+{"question": "What does itertools.batched do?", "answer": "Batch data into tuples of length n.", "source": "itertools.md"}
+{"question": "What does random.SystemRandom do?", "answer": "Alternate random number generator using sources provided by the operating system (such as /dev/urandom on Unix or CryptGenRandom on Windows).", "source": "random.md"}
+{"question": "What does hashlib.new do?", "answer": "new(name, data=b'') - Return a new hashing object using the named algorithm; optionally initialized with data (which must be a bytes-like object).", "source": "hashlib.md"}
+{"question": "What does platform.python_build do?", "answer": "Returns a tuple (buildno, builddate) stating the Python build number and date as strings.", "source": "platform.md"}
+{"question": "What does math.log10 do?", "answer": "Return the base 10 logarithm of x.", "source": "math.md"}
+{"question": "What does contextlib.chdir do?", "answer": "Non thread-safe context manager to change the current working directory.", "source": "contextlib.md"}
+{"question": "What does functools.singledispatch do?", "answer": "Single-dispatch generic function decorator.", "source": "functools.md"}
+{"question": "What does ast.ImportFrom do?", "answer": "ImportFrom(identifier?", "source": "ast.md"}
+{"question": "What does ftplib.error_temp do?", "answer": "Common base class for all non-exit exceptions.", "source": "ftplib.md"}
+{"question": "What does copy.copy do?", "answer": "Shallow copy operation on arbitrary Python objects.", "source": "copy.md"}
+{"question": "What does csv.Sniffer do?", "answer": "\"Sniffs\" the format of a CSV file (i.e.", "source": "csv.md"}
+{"question": "What does shutil.get_terminal_size do?", "answer": "Get the size of the terminal window.", "source": "shutil.md"}
+{"question": "What does math.gamma do?", "answer": "Gamma function at x.", "source": "math.md"}
+{"question": "What does configparser.Error do?", "answer": "Base class for ConfigParser exceptions.", "source": "configparser.md"}
+{"question": "What does difflib.SequenceMatcher do?", "answer": "SequenceMatcher is a flexible class for comparing pairs of sequences of any type, so long as the sequence elements are hashable.", "source": "difflib.md"}
+{"question": "What does email.utils.parseaddr do?", "answer": "Parse addr into its constituent realname and email address parts.", "source": "email_utils.md"}
+{"question": "What does ast.MatchSequence do?", "answer": "MatchSequence(pattern* patterns)", "source": "ast.md"}
+{"question": "What does ast.cmpop do?", "answer": "cmpop = Eq | NotEq | Lt | LtE | Gt | GtE | Is | IsNot | In | NotIn", "source": "ast.md"}
+{"question": "What does urllib.parse.urldefrag do?", "answer": "Removes any existing fragment from URL.", "source": "urllib_parse.md"}
+{"question": "What does ssl.create_default_context do?", "answer": "Create a SSLContext object with default settings.", "source": "ssl.md"}
+{"question": "What does weakref.WeakValueDictionary do?", "answer": "Mapping class that references values weakly.", "source": "weakref.md"}
+{"question": "What does itertools.tee do?", "answer": "Returns a tuple of n independent iterators.", "source": "itertools.md"}
+{"question": "What does dis.findlinestarts do?", "answer": "Find the offsets in a byte code which are start of lines in the source.", "source": "dis.md"}
+{"question": "What does itertools.combinations_with_replacement do?", "answer": "Return successive r-length combinations of elements in the iterable allowing individual elements to have successive repeats.", "source": "itertools.md"}
+{"question": "What does inspect.getargvalues do?", "answer": "Get information about arguments passed into a particular frame.", "source": "inspect.md"}
+{"question": "What does decimal.DivisionUndefined do?", "answer": "Second argument to a division or modulo operation was zero.", "source": "decimal.md"}
+{"question": "What does ftplib.error_reply do?", "answer": "Common base class for all non-exit exceptions.", "source": "ftplib.md"}
+{"question": "What does decimal.DivisionImpossible do?", "answer": "Base class for arithmetic errors.", "source": "decimal.md"}
+{"question": "What does statistics.mean do?", "answer": "Return the sample arithmetic mean of data.", "source": "statistics.md"}
+{"question": "What does inspect.getclosurevars do?", "answer": "Get the mapping of free variables to their current values.", "source": "inspect.md"}
+{"question": "What does platform.libc_ver do?", "answer": "Tries to determine the libc version that the file executable (which defaults to the Python interpreter) is linked against.", "source": "platform.md"}
+{"question": "What does platform.python_revision do?", "answer": "Returns a string identifying the Python implementation revision.", "source": "platform.md"}
+{"question": "What does functools.update_wrapper do?", "answer": "Update a wrapper function to look like the wrapped function  wrapper is the function to be updated wrapped is the original function assigned is a tuple naming the attributes assigned directly from the wrapped function to the wrapper function (defaults to functools.WRAPPER_ASSIGNMENTS) updated is a t", "source": "functools.md"}
+{"question": "What does glob.escape do?", "answer": "Escape all special characters.", "source": "glob.md"}
+{"question": "What does math.log do?", "answer": "log(x, [base=math.e]) Return the logarithm of x to the given base.", "source": "math.md"}
+{"question": "What does inspect.Traceback do?", "answer": "_Traceback(filename, lineno, function, code_context, index)", "source": "inspect.md"}
+{"question": "What does logging.exception do?", "answer": "Log a message with severity 'ERROR' on the root logger, with exception information.", "source": "logging.md"}
+{"question": "What does itertools.dropwhile do?", "answer": "Drop items from the iterable while predicate(item) is true.", "source": "itertools.md"}
+{"question": "What does inspect.getsource do?", "answer": "Return the text of the source code for an object.", "source": "inspect.md"}
+{"question": "What does dataclasses.make_dataclass do?", "answer": "Return a new dynamically created dataclass.", "source": "dataclasses.md"}
+{"question": "What does statistics.stdev do?", "answer": "Return the square root of the sample variance.", "source": "statistics.md"}
+{"question": "What does inspect.getargs do?", "answer": "Get information about the arguments accepted by a code object.", "source": "inspect.md"}
+{"question": "What does secrets.token_bytes do?", "answer": "Return a random byte string containing *nbytes* bytes.", "source": "secrets.md"}
+{"question": "What does http.client.UnknownTransferEncoding do?", "answer": "Common base class for all non-exit exceptions.", "source": "http_client.md"}
+{"question": "What does itertools.product do?", "answer": "Cartesian product of input iterables.", "source": "itertools.md"}
+{"question": "What does ast.excepthandler do?", "answer": "excepthandler = ExceptHandler(expr?", "source": "ast.md"}
+{"question": "What does queue.PriorityQueue do?", "answer": "Variant of Queue that retrieves open entries in priority order (lowest first).", "source": "queue.md"}
+{"question": "What does statistics.linear_regression do?", "answer": "Slope and intercept for simple linear regression.", "source": "statistics.md"}
+{"question": "What does typing.NewType do?", "answer": "NewType creates simple unique types with almost zero runtime overhead.", "source": "typing.md"}
+{"question": "What does html.unescape do?", "answer": "Convert all named and numeric character references (e.g.", "source": "html.md"}
+{"question": "What does locale.getlocale do?", "answer": "Returns the current setting for the given locale category as tuple (language code, encoding).", "source": "locale.md"}
+{"question": "What does pathlib.PurePath do?", "answer": "Base class for manipulating paths without I/O.", "source": "pathlib.md"}
+{"question": "What does inspect.getdoc do?", "answer": "Get the documentation string for an object.", "source": "inspect.md"}
+{"question": "What does statistics.median_grouped do?", "answer": "Estimates the median for numeric data binned around the midpoints of consecutive, fixed-width intervals.", "source": "statistics.md"}
+{"question": "What does os.renames do?", "answer": "renames(old, new)  Super-rename; create directories as necessary and delete any left empty.", "source": "os.md"}
+{"question": "What does inspect.getasyncgenlocals do?", "answer": "Get the mapping of asynchronous generator local variables to their current values.", "source": "inspect.md"}
+{"question": "What does argparse.Namespace do?", "answer": "Simple object for storing attributes.", "source": "argparse.md"}
+{"question": "What does os.makedirs do?", "answer": "makedirs(name [, mode=0o777][, exist_ok=False])  Super-mkdir; create a leaf directory and all intermediate ones.", "source": "os.md"}
+{"question": "What does re.error do?", "answer": "Exception raised for invalid regular expressions.", "source": "re.md"}
+{"question": "What does typing.TypedDict do?", "answer": "A simple typed namespace.", "source": "typing.md"}
+{"question": "What does ssl.PEM_cert_to_DER_cert do?", "answer": "Takes a certificate in ASCII PEM format and returns the DER-encoded version of it as a byte sequence", "source": "ssl.md"}
+{"question": "What does tarfile.copyfileobj do?", "answer": "Copy length bytes from fileobj src to fileobj dst.", "source": "tarfile.md"}
+{"question": "What does enum.auto do?", "answer": "Instances are replaced with an appropriate value in Enum class suites.", "source": "enum.md"}
+{"question": "What does smtplib.SMTPServerDisconnected do?", "answer": "Not connected to any SMTP server.", "source": "smtplib.md"}
+{"question": "What does operator.attrgetter do?", "answer": "Return a callable object that fetches the given attribute(s) from its operand.", "source": "operator.md"}
+{"question": "What does time.thread_time do?", "answer": "thread_time() -> float  Thread time for profiling: sum of the kernel and user-space CPU time.", "source": "time.md"}
+{"question": "What does xml.etree.ElementTree.iterparse do?", "answer": "Incrementally parse XML document into ElementTree.", "source": "xml_etree_ElementTree.md"}
+{"question": "What does secrets.randbelow do?", "answer": "Return a random int in the range [0, n).", "source": "secrets.md"}
+{"question": "What does tempfile.gettempdirb do?", "answer": "Returns tempfile.tempdir as bytes.", "source": "tempfile.md"}
+{"question": "What does email.utils.format_datetime do?", "answer": "Turn a datetime into a date string as specified in RFC 2822.", "source": "email_utils.md"}
+{"question": "What does calendar.IllegalWeekdayError do?", "answer": "Inappropriate argument value (of correct type).", "source": "calendar.md"}
+{"question": "What does xml.etree.ElementTree.C14NWriterTarget do?", "answer": "Canonicalization writer target for the XMLParser.", "source": "xml_etree_ElementTree.md"}
+{"question": "What does inspect.isawaitable do?", "answer": "Return true if object can be passed to an ``await`` expression.", "source": "inspect.md"}
+{"question": "What does xml.etree.ElementTree.parse do?", "answer": "Parse XML document into element tree.", "source": "xml_etree_ElementTree.md"}
+{"question": "What does pprint.isreadable do?", "answer": "Determine if saferepr(object) is readable by eval().", "source": "pprint.md"}
+{"question": "What does configparser.InterpolationDepthError do?", "answer": "Raised when substitutions are nested too deeply.", "source": "configparser.md"}
+{"question": "What does tarfile.InvalidHeaderError do?", "answer": "Exception for invalid headers.", "source": "tarfile.md"}
+{"question": "What does base64.b32hexdecode do?", "answer": "Decode the base32hex encoded bytes-like object or ASCII string s.", "source": "base64.md"}
+{"question": "What does difflib.restore do?", "answer": "Generate one of the two sequences that generated a delta.", "source": "difflib.md"}
+{"question": "What does xml.etree.ElementTree.iselement do?", "answer": "Return True if *element* appears to be an Element.", "source": "xml_etree_ElementTree.md"}
+{"question": "What does queue.Queue do?", "answer": "Create a queue object with a given maximum size.", "source": "queue.md"}
+{"question": "What does shutil.RegistryError do?", "answer": "Raised when a registry operation with the archiving and unpacking registries fails", "source": "shutil.md"}
+{"question": "What does ssl.SSLWantWriteError do?", "answer": "Non-blocking SSL socket needs to write more data before the requested operation can be completed.", "source": "ssl.md"}
+{"question": "What does time.thread_time_ns do?", "answer": "thread_time() -> int  Thread time for profiling as nanoseconds: sum of the kernel and user-space CPU time.", "source": "time.md"}
+{"question": "What does queue.LifoQueue do?", "answer": "Variant of Queue that retrieves most recently added entries first.", "source": "queue.md"}
+{"question": "What does shutil.disk_usage do?", "answer": "Return disk usage statistics about the given path.", "source": "shutil.md"}
+{"question": "What does smtplib.SMTPSenderRefused do?", "answer": "Sender address refused.", "source": "smtplib.md"}
+{"question": "What does math.dist do?", "answer": "Return the Euclidean distance between two points p and q.", "source": "math.md"}
+{"question": "What does tokenize.untokenize do?", "answer": "Transform tokens back into Python source code.", "source": "tokenize.md"}
+{"question": "What does inspect.getmodulename do?", "answer": "Return the module name for a given file, or None.", "source": "inspect.md"}
+{"question": "What does logging.Manager do?", "answer": "There is [under normal circumstances] just one Manager instance, which holds the hierarchy of loggers.", "source": "logging.md"}
+{"question": "What does typing.get_overloads do?", "answer": "Return all defined overloads for *func* as a sequence.", "source": "typing.md"}
+{"question": "What does configparser.InterpolationError do?", "answer": "Base class for interpolation-related exceptions.", "source": "configparser.md"}
+{"question": "What does dis.code_info do?", "answer": "Formatted details of methods, functions, or code.", "source": "dis.md"}
+{"question": "What does threading.getprofile do?", "answer": "Get the profiler function as set by threading.setprofile().", "source": "threading.md"}
+{"question": "What does inspect.isclass do?", "answer": "Return true if the object is a class.", "source": "inspect.md"}
+{"question": "What does ast.Name do?", "answer": "Name(identifier id, expr_context ctx)", "source": "ast.md"}
+{"question": "What does threading.RLock do?", "answer": "Factory function that returns a new reentrant lock.", "source": "threading.md"}
+{"question": "What does ast.Global do?", "answer": "Global(identifier* names)", "source": "ast.md"}
+{"question": "What does shutil.copymode do?", "answer": "Copy mode bits from src to dst.", "source": "shutil.md"}
+{"question": "What does logging.warning do?", "answer": "Log a message with severity 'WARNING' on the root logger.", "source": "logging.md"}
+{"question": "What does urllib.parse.quote_from_bytes do?", "answer": "Like quote(), but accepts a bytes object rather than a str, and does not perform string-to-bytes encoding.", "source": "urllib_parse.md"}
+{"question": "What does inspect.getcallargs do?", "answer": "Get the mapping of arguments to values.", "source": "inspect.md"}
+{"question": "What does base64.decode do?", "answer": "Decode a file; input and output are binary files.", "source": "base64.md"}
+{"question": "What does tempfile.mkdtemp do?", "answer": "User-callable function to create and return a unique temporary directory.", "source": "tempfile.md"}
+{"question": "What does ast.slice do?", "answer": "Deprecated AST node class.", "source": "ast.md"}
+{"question": "What does typing.SupportsIndex do?", "answer": "An ABC with one abstract method __index__.", "source": "typing.md"}
+{"question": "What does urllib.parse.unquote do?", "answer": "Replace %xx escapes by their single-character equivalent.", "source": "urllib_parse.md"}
+{"question": "What does types.prepare_class do?", "answer": "Call the __prepare__ method of the appropriate metaclass.", "source": "types.md"}
+{"question": "What does ast.AsyncWith do?", "answer": "AsyncWith(withitem* items, stmt* body, string?", "source": "ast.md"}
+{"question": "What does difflib.ndiff do?", "answer": "Compare `a` and `b` (lists of strings); return a `Differ`-style delta.", "source": "difflib.md"}
+{"question": "What does smtplib.SMTP_SSL do?", "answer": "This is a subclass derived from SMTP that connects over an SSL encrypted socket (to use this class you need a socket module that was compiled with SSL support).", "source": "smtplib.md"}
+{"question": "What does itertools.accumulate do?", "answer": "Return series of accumulated sums (or other binary function results).", "source": "itertools.md"}

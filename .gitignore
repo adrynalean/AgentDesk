@@ -4,6 +4,7 @@ __pycache__/
 .env
 .chroma/
 chroma_db/
+corpus/
 data/*.jsonl
 *.log
 .pytest_cache/
