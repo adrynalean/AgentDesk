@@ -1,3 +1,8 @@
-{"question": "What does the retriever node return?", "answer": "A list of scored, re-ranked context chunks."}
-{"question": "Which framework orchestrates the agents?", "answer": "LangGraph."}
-{"question": "What is 3 * (4 + 1)?", "answer": "15"}
+{"question": "What are the three agents in AgentDesk?", "answer": "planner, retriever, and executor"}
+{"question": "What orchestrates the agents in AgentDesk?", "answer": "LangGraph"}
+{"question": "What is the default vector store?", "answer": "Chroma"}
+{"question": "How does AgentDesk combine dense and lexical retrieval?", "answer": "reciprocal-rank fusion"}
+{"question": "What does the calculator tool do?", "answer": "evaluates a basic arithmetic expression safely"}
+{"question": "What does evaluation measure?", "answer": "grounded faithfulness of the answer against retrieved context"}
+{"question": "What embeddings are used in development?", "answer": "a deterministic hashed character-n-gram embedding"}
+{"question": "What is 42 * (3 + 1)?", "answer": "168"}

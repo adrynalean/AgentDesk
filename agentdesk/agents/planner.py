@@ -1,23 +1,22 @@
-"""Planner node: decompose the question into ordered sub-steps."""
+"""Planner node: decompose the question into retrieval sub-queries."""
 from __future__ import annotations
+
+import re
 
 from ..state import AgentState
 
-PLANNER_SYSTEM = (
-    "You are a planning agent. Break the user's question into a short ordered list "
-    "of retrieval/tool steps needed to answer it faithfully. Return concise steps."
-)
+
+def _subqueries(question: str) -> list[str]:
+    """Split compound questions ('and', '?') into focused retrieval queries."""
+    parts = re.split(r"\?|\band\b|;", question, flags=re.I)
+    subs = [p.strip(" ,") for p in parts if len(p.strip()) > 3]
+    return subs or [question.strip()]
 
 
 def plan(state: AgentState) -> AgentState:
-    """Produce state['plan'].
-
-    TODO(M2): call the chat model with PLANNER_SYSTEM + question, parse steps.
-    """
-    question = state["question"]
-    plan_steps = [f"retrieve context for: {question}", "synthesize grounded answer"]
+    subs = _subqueries(state["question"])
     return {
         **state,
-        "plan": plan_steps,
-        "messages": [{"role": "planner", "content": plan_steps}],
+        "plan": subs,
+        "messages": [{"role": "planner", "content": subs}],
     }
