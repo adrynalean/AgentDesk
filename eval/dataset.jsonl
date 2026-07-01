@@ -1,0 +1,3 @@
+{"question": "What does the retriever node return?", "answer": "A list of scored, re-ranked context chunks."}
+{"question": "Which framework orchestrates the agents?", "answer": "LangGraph."}
+{"question": "What is 3 * (4 + 1)?", "answer": "15"}
