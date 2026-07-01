@@ -1,0 +1,13 @@
+{
+  "timestamp": "2026-07-01T23:10:42+00:00",
+  "dataset": "eval/dataset_large.jsonl",
+  "model": "grounded-mock (keyless)",
+  "judge": "lexical",
+  "chunks": 927,
+  "questions": 250,
+  "faithfulness_rag": 0.983,
+  "faithfulness_baseline": 0.648,
+  "lift": 1.517,
+  "latency_mean_ms": 11.4,
+  "latency_p95_ms": 12.9
+}
