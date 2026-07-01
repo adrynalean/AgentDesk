@@ -61,6 +61,7 @@ class BedrockLLM:
 
 
 def _sentences(text: str) -> list[str]:
+    text = re.sub(r"^#{1,6}\s*", "", text, flags=re.M)   # strip markdown headings
     return [s.strip() for s in re.split(r"(?<=[.!?])\s+", text) if s.strip()]
 
 

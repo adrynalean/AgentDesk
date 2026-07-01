@@ -1,0 +1,27 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ["3.11", "3.12"]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Install minimal deps (keyless path)
+        run: pip install fastapi pydantic pydantic-settings pytest requests numpy
+      - name: Run tests
+        run: pytest tests/ -q
+      - name: Build corpus + run keyless eval benchmark
+        run: |
+          python scripts/build_corpus.py corpus
+          python -m agentdesk.rag.ingest ./corpus
+          python -m eval.run_eval eval/dataset_large.jsonl

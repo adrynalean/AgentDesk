@@ -12,3 +12,4 @@ node_modules/
 dist/
 
 eval/results_history.jsonl
+.claude/

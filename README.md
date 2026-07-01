@@ -1,5 +1,7 @@
 # AgentDesk — Multi-Agent RAG Assistant
 
+![CI](https://github.com/adrynalean/AgentDesk/actions/workflows/ci.yml/badge.svg)
+
 A multi-agent, retrieval-augmented assistant. A **planner** decomposes a request,
 a **retriever** grounds each sub-query in a vector store (hybrid dense + lexical),
 and a **tool-executor** runs tools (calculator, web search) via a **ReAct** loop and
@@ -31,8 +33,10 @@ question ─► planner ─► retriever ─► executor ─► grounded answer
 | `agentdesk/rag/{embeddings,store,ingest,retriever}.py` | embeddings, vector store, hybrid retrieval |
 | `agentdesk/tools/` | tool registry (calculator, web_search) |
 | `agentdesk/llm.py` | OpenAI / Bedrock providers + grounded mock |
-| `agentdesk/api/main.py` | FastAPI `/ingest`, `/chat`, `/chat/stream` |
+| `agentdesk/api/main.py` | FastAPI `/ingest`, `/chat`, `/chat/stream` + serves the UI |
+| `frontend/` | buildless React chat UI (plan, tool calls, sources) |
 | `eval/` | grounded-faithfulness harness (RAG vs no-retrieval baseline) |
+| `scripts/` | corpus + eval-set builders (stdlib docs, offline) |
 
 ## Quickstart
 
@@ -63,6 +67,18 @@ curl -s localhost:8000/chat -H 'content-type: application/json' \
   -d '{"question":"What orchestrates the agents?"}'
 # {"answer":"AgentDesk is orchestrated with LangGraph.", "sources":["agentdesk.md", ...]}
 ```
+
+## Chat UI
+
+`uvicorn agentdesk.api.main:app` also serves a **React chat UI** at `http://localhost:8000/` —
+it shows the final answer plus the agent's plan, tool calls (with inputs/observations),
+and retrieval sources for every message. No build step needed (React via ESM).
+
+## Benchmark
+
+See [BENCHMARK.md](BENCHMARK.md) and [eval/RESULTS.md](eval/RESULTS.md) — a 927-chunk
+corpus built from Python stdlib docs, a seeded 250-question set, and a harness that
+reports faithfulness + latency (LLM-as-judge when a provider key is configured).
 
 ## Going to production
 

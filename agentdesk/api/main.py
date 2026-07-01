@@ -2,15 +2,19 @@
 from __future__ import annotations
 
 from functools import lru_cache
+from pathlib import Path
 
 from fastapi import FastAPI
 from fastapi.responses import StreamingResponse
+from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel
 
 from ..graph import answer
 from ..rag.ingest import ingest
 
 app = FastAPI(title="AgentDesk", version="0.1.0")
+
+_FRONTEND = Path(__file__).resolve().parents[2] / "frontend"
 
 
 @lru_cache
@@ -59,3 +63,7 @@ def chat_stream(req: ChatRequest) -> StreamingResponse:
         yield "data: [DONE]\n\n"
 
     return StreamingResponse(gen(), media_type="text/event-stream")
+
+
+# Serve the chat UI (buildless React frontend) at /
+app.mount("/", StaticFiles(directory=_FRONTEND, html=True), name="frontend")
