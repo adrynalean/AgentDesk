@@ -19,7 +19,7 @@ jobs:
       - name: Install minimal deps (keyless path)
         run: pip install fastapi pydantic pydantic-settings pytest requests numpy
       - name: Run tests
-        run: pytest tests/ -q
+        run: python -m pytest tests/ -q
       - name: Build corpus + run keyless eval benchmark
         run: |
           python scripts/build_corpus.py corpus
